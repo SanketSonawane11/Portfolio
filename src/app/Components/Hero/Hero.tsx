@@ -5,12 +5,12 @@ import { Spotlight } from "../ui/Spotlight";
 import { GridBackground } from "../ui/Grid-background";
 import { HeroHighlight, Highlight } from "../ui/Hero-highlight";
 import HeroFade from "../ui/gsapFade";
-import { TextGenerateEffect } from "../ui/Text-generate-effect";
 import gsap from "gsap";
+import CtaButton from "../CtaButton/Button";
+import { FaLocationArrow } from "react-icons/fa";
+import { IconPosition } from "../CtaButton/Button";
 
 function Hero() {
-  const word = "Crafting Engaging Web Experiences with Expertise in Tech";
-
   const HeroTextFade = ({
     className,
     children,
@@ -67,13 +67,14 @@ function Hero() {
                 </div>
               </HeroTextFade>
             </HeroHighlight>
-            <button className="p-[3px] relative active:">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-              <div className="px-8 py-2 text-sm md:text-lg bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-                See my work
-              </div>
-            </button>
           </HeroFade>
+          <a href="#projects">
+            <CtaButton
+              text="See my work"
+              position={IconPosition.Left}
+              icon={<FaLocationArrow />}
+            />
+          </a>
         </div>
       </GridBackground>
     </div>
