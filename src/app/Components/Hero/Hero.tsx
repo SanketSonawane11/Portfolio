@@ -45,7 +45,7 @@ function Hero() {
         <div className="text-center w-[25rem] md:min-w-[40rem] lg:min-w-[85rem] flex-col flex items-center gap-5 justify-center">
           <HeroFade>
             <HeroHighlight className=" text-white/80 text-4xl md:text-5xl lg:text-6xl">
-              <HeroTextFade className="text-white/80 text-4xl md:text-5xl lg:text-6xl">
+              <HeroTextFade className=" letter text-white/80 text-4xl md:text-5xl lg:text-6xl">
                 <h1 className="text-lg mb-5 md:mb-10 md:text-xl font-light text-white/60">
                   {splitText(
                     "Elevating Web Development with Precision and Style"
@@ -68,7 +68,7 @@ function Hero() {
               </HeroTextFade>
             </HeroHighlight>
           </HeroFade>
-          <a href="#projects">
+          <a href="#about">
             <CtaButton
               text="See my work"
               position={IconPosition.Left}
