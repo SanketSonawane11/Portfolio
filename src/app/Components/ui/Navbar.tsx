@@ -13,7 +13,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { PiLineVerticalBold } from "react-icons/pi";
-import { socialLinks } from "@/app/data/socials";
+import { socialLinks } from "@/app/data/navLinks";
 
 export const FloatingNav = ({
   navItems,
