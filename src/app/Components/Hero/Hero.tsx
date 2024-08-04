@@ -38,11 +38,11 @@ function Hero() {
     ));
 
   return (
-    <div>
+    <div className="w-[100%] flex items-center justify-center">
       <Spotlight className="top-[-10%] left-[15%]" fill="blue" />
       <Spotlight className="top-[-30%] left-[-10%]" fill="white" />
       <GridBackground className="flex flex-col w-[100%] items-center justify-center">
-        <div className="text-center w-[32rem] md:min-w-[50rem] lg:min-w-[85rem] flex-col flex items-center gap-5 justify-center">
+        <div className="text-center w-[25rem] md:min-w-[50rem] lg:min-w-[85rem] flex-col flex items-center gap-5 justify-center">
           <HeroFade>
             <HeroHighlight className=" text-white/80 text-4xl md:text-5xl lg:text-6xl">
               <HeroTextFade className="text-white/80 text-4xl md:text-5xl lg:text-6xl">

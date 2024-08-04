@@ -4,7 +4,7 @@ import Projects from "./Components/Projects/Projects";
 
 function page() {
   return (
-    <div>
+    <div className=" overflow-hidden w-[100vw]">
       <Hero />
     </div>
   );
