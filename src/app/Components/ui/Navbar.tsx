@@ -71,11 +71,11 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 hover:scale-125 duration-150 ease-out transition-all hover:font-semibold"
+              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 hover:scale-110 rounded-lg duration-150 ease-out transition-all hover:font-semibold"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm mx-5">{navItem.name}</span>
+            <span className="hidden sm:block text-lg mx-5">{navItem.name}</span>
           </Link>
         ))}
 
@@ -87,10 +87,10 @@ export const FloatingNav = ({
               key={i.name}
               href={i.link}
               target="_blank"
-              className="flex items-center space-x-2 text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300 hover:scale-125 duration-150 ease-out transition-all hover:font-semibold"
+              className="flex items-center space-x-2 text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300 hover:scale-110 duration-150 ease-out transition-all hover:font-semibold"
             >
               <span className="block sm:hidden">{i.icon}</span>
-              <span className="hidden sm:block text-sm">{i.name}</span>
+              <span className="hidden sm:block text-lg">{i.name}</span>
             </a>
           ))}
         </div>

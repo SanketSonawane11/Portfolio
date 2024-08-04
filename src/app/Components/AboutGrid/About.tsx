@@ -15,7 +15,7 @@ import Image from "next/image";
 
 function About() {
   return (
-    <div id="about" className="w-full h-fit p-[1rem]">
+    <div id="about" className="w-full h-fit px-6 md:px-[5rem]">
       <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
         {aboutItems.map((item, i) => (
           <BentoGridItem
