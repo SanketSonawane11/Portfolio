@@ -6,7 +6,7 @@ import { navItems } from "./data/navLinks";
 
 function page() {
   return (
-    <div className=" overflow-hidden w-[100vw]">
+    <div className="overflow-hidden w-[100vw]">
       <FloatingNav navItems={navItems} />
       <Hero />
       <About />
