@@ -59,11 +59,16 @@ function Hero() {
                   {splitText(" with Expertise in Tech")}
                 </p>
                 <div className="text-xl mt-8 md:mt-5 text-white/70">
-                  Hi! I’m Sanket, a{" "}
+                  Hi! I’m{" "}
+                  <Highlight className="name text-black dark:text-white">
+                    {splitText("Sanket")}
+                  </Highlight>{" "}
+                  , a{" "}
                   <Highlight className="text-black dark:text-white">
                     {splitText("Full-Stack Developer")}
                   </Highlight>{" "}
-                  specializing in React and Next.js.
+                  specializing in {" "} 
+                  <span className="text-black dark:text-white"> React and Next.js.</span>
                 </div>
               </HeroTextFade>
             </HeroHighlight>
