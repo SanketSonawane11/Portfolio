@@ -67,14 +67,18 @@ function Hero() {
                   <Highlight className="text-black dark:text-white">
                     {splitText("Full-Stack Developer")}
                   </Highlight>{" "}
-                  specializing in {" "} 
-                  <span className="text-black dark:text-white"> React and Next.js.</span>
+                  specializing in{" "}
+                  <span className="text-black dark:text-white">
+                    {" "}
+                    React and Next.js.
+                  </span>
                 </div>
               </HeroTextFade>
             </HeroHighlight>
           </HeroFade>
           <a href="#about">
             <CtaButton
+              className="text-[1rem] md:text-[1.5rem] px-5 py-[0.2rem] md:py-[1rem]"
               text="See my work"
               position={IconPosition.Left}
               icon={<FaLocationArrow />}

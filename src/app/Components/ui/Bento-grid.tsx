@@ -158,6 +158,7 @@ export const BentoGridItem = ({
               </div>
               <CtaButton
                 text={copied ? "Email Copied" : "Copy my Email"}
+                className="text-[1.1rem] md:text-[1.2rem] px-4 py-[0.4rem]"
                 icon={<IoCopyOutline />}
                 onClick={handleCopy}
                 position={IconPosition.Right}
