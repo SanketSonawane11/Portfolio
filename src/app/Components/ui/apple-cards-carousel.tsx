@@ -30,6 +30,9 @@ type Card = {
   title: string;
   category: string;
   content: string;
+  link: string;
+  video: string;
+  github: string;
 };
 
 export const CarouselContext = createContext<{
