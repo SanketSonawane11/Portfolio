@@ -1,9 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { TfiLinkedin } from "react-icons/tfi";
-import { RxGithubLogo } from "react-icons/rx";
-import { BsTwitterX } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
 import {
   motion,
   AnimatePresence,

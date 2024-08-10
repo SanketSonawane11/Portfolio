@@ -88,9 +88,7 @@ export const BentoGridItem = ({
           )}
         </div>
         {id === 6 && (
-          <BackgroundGradientAnimation>
-            {/* <div className="absolute z-50 text-white font-bold"></div> */}
-          </BackgroundGradientAnimation>
+          <BackgroundGradientAnimation></BackgroundGradientAnimation>
         )}
         <div
           className={cn(
@@ -127,12 +125,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-5 lg:gap-6 lg:mt-4 h-fit">
                 <span className="py-6 px-3 rounded-lg text-center bg-[#151831]" />
-                {["MongoDb",
-                  "Express",
-                  "APIs",
-                  "Framer", 
-                  "Git",
-                ].map(
+                {["MongoDb", "Express", "APIs", "Framer", "Git"].map(
                   (skill) => (
                     <span
                       key={skill}
