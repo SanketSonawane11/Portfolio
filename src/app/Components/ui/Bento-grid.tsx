@@ -89,7 +89,7 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 text-white font-bold"></div>
+            {/* <div className="absolute z-50 text-white font-bold"></div> */}
           </BackgroundGradientAnimation>
         )}
         <div
@@ -98,7 +98,7 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition-all duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight text-white max-w-[50%] text-xs md:text-xs lg:text-base z-10">
+          <div className="font-sans font-extralight text-white max-w-[70%] text-xs md:text-xs lg:text-base z-10">
             {description}
           </div>
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 right-15 z-10">
@@ -106,15 +106,15 @@ export const BentoGridItem = ({
           </div>
           {id === 2 && <GridGlobe />}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 overflow-x-auto scrollbar-hidden">
               <div className="flex flex-col gap-5 lg:gap-6 lg:mt-10 h-fit">
                 {[
+                  "TailwindCss",
+                  "Typescript",
                   "React.Js",
                   "Next.Js",
-                  "Typescript",
-                  "TailwindCss",
                   "Recoil",
-                  "GSAP"
+                  "GSAP",
                 ].map((skill) => (
                   <span
                     key={skill}
@@ -125,36 +125,27 @@ export const BentoGridItem = ({
                 ))}
                 <span className="py-6 lg:mb-5 px-3 rounded-lg text-center bg-[#151831]" />
               </div>
-              <div className="flex flex-col gap-3 lg:gap-4 lg:mt-4">
+              <div className="flex flex-col gap-5 lg:gap-6 lg:mt-4 h-fit">
                 <span className="py-6 px-3 rounded-lg text-center bg-[#151831]" />
-                {["MongoDb", 
-                  "Express", 
-                  "Node", 
-                  "APIs", 
-                  "Framer Motion",
-                  "Git"
-                ].map((skill) => (
-                  <span
-                    key={skill}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132ec7]"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                {["MongoDb",
+                  "Express",
+                  "APIs",
+                  "Framer", 
+                  "Git",
+                ].map(
+                  (skill) => (
+                    <span
+                      key={skill}
+                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132ec7]"
+                    >
+                      {skill}
+                    </span>
+                  )
+                )}
               </div>
-              {/* <div className="flex flex-col gap-3 lg:gap-8">
-                {["Ui/Ux",].map((skill) => (
-                  <span
-                    key={skill}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {skill}
-                  </span>
-                ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
-              </div> */}
             </div>
           )}
+
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
