@@ -16,6 +16,9 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/Hooks/use-outside-click";
+import { FaLink, FaPlay } from "react-icons/fa";
+import { RxGithubLogo } from "react-icons/rx";
+import { PiLineVerticalBold } from "react-icons/pi";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -226,15 +229,38 @@ export const Card = ({
               >
                 {card.category}
               </motion.p>
-              <motion.p
-                layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white"
-              >
-                {card.title}
-              </motion.p>
+              <div className="flex flex-col items-start justify-start gap-3">
+                <motion.p
+                  layoutId={layout ? `title-${card.title}` : undefined}
+                  className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white"
+                >
+                  {card.title}
+                </motion.p>
+                <div className=" flex items-center justify-start gap-3 text-[1rem]">
+                  {(card.link || card.video) && (
+                    <div className="flex items-center gap-3 text-blue-500 hover:font-semibold hover:text-blue-300 transition-all ease-out duration-200">
+                      {card.link ? <FaLink /> : <FaPlay />}{" "}
+                      <a target="_blank" href={card.video || card.link}>
+                        {card.link ? "View Live" : "Watch Working Video"}
+                      </a>
+                    </div>
+                  )}
+                  {card.github && (
+                    <div className="flex items-center gap-3">
+                      <PiLineVerticalBold className="text-[1rem] font-extrabold"/>
+                      <div className="flex items-center gap-3 text-blue-500 hover:font-semibold hover:text-blue-300 transition-all ease-out duration-200">
+                        <RxGithubLogo />
+                        <a target="_blank" href={card.github}>
+                          Check Github Repository
+                        </a>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
               <div dangerouslySetInnerHTML={{ __html: card.content }} />
             </motion.div>
-            <div className="w-full ">Check</div>
+            <div className="w-full"></div>
           </div>
         )}
       </AnimatePresence>

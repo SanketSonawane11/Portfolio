@@ -38,7 +38,8 @@ export const projects = [
         </ul>
       </div>
     `,
-    link: "https://drive.google.com/file/d/1XCQBN8ThuRc43PapPp_GTk-VgaBG_30l/view",
+    link: '',
+    video: "https://drive.google.com/file/d/1XCQBN8ThuRc43PapPp_GTk-VgaBG_30l/view",
     github: "https://github.com/SanketSonawane11/PayTm",
   },
   {
@@ -59,7 +60,7 @@ export const projects = [
         <li class='text-base md:text-lg lg:text-xl'>Public URL: Users receive a public URL to view and share the generated image.</li>
       </ul>
     </div>`,
-    link: "og-generator-nine.vercel.app",
+    link: "https://og-generator-nine.vercel.app",
     github: "https://github.com/SanketSonawane11/OG-generator",
   },
   {
