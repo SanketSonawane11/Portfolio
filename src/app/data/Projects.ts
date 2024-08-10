@@ -1,74 +1,134 @@
-// export const projects = [
-//   {
-//     id: 1,
-//     title: "3D Solar System Planets to Explore",
-//     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-//     img: "/p1.svg",
-//     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-//     link: "https://github.com/adrianhajdin?tab=repositories",
-//   },
-//   {
-//     id: 2,
-//     title: "Yoom - Video Conferencing App",
-//     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-//     img: "/p2.svg",
-//     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-//     link: "https://github.com/adrianhajdin/zoom-clone",
-//   },
-//   {
-//     id: 3,
-//     title: "AI Image SaaS - Canva Application",
-//     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-//     img: "/p3.svg",
-//     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-//     link: "https://github.com/adrianhajdin/ai_saas_app",
-//   },
-//   {
-//     id: 4,
-//     title: "Animated Apple Iphone 3D Website",
-//     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-//     img: "/p4.svg",
-//     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-//     link: "https://github.com/adrianhajdin/iphone",
-//   },
-// ];
-
 export const projects = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: "<DummyContent />",
+    category: "Web",
+    title: "Campus Chronicles: Notes Sharing Platform",
+    src: "/Projects/CampusChronicles.jpg",
+    content: `
+        <div class='p-4 md:p-6 lg:p-8'><p class='text-base md:text-lg lg:text-xl mb-4'>Campus Chronicles is a dynamic platform designed to facilitate the exchange of academic resources among college students.</p><p class='text-base md:text-lg lg:text-xl mb-4'><strong class='font-semibold'>Features:</strong></p><ul class='list-disc list-inside mb-4 space-y-2'><li class='text-base md:text-lg lg:text-xl'>Browse and download notes based on branch and year</li><li class='text-base md:text-lg lg:text-xl'>Upload notes for others to access</li></ul><p class='text-base md:text-lg lg:text-xl mb-4'><strong class='font-semibold'>Technologies:</strong></p><div class='mb-4'><h4 class='text-base md:text-lg lg:text-xl font-semibold mb-2'>Frontend:</h4><ul class='list-disc list-inside space-y-2'><li class='text-base md:text-lg lg:text-xl'>Next.js</li><li class='text-base md:text-lg lg:text-xl'>GSAP</li><li class='text-base md:text-lg lg:text-xl'>Context API</li></ul><h4 class='text-base md:text-lg lg:text-xl font-semibold mb-2 mt-4'>Backend:</h4><ul class='list-disc list-inside space-y-2'><li class='text-base md:text-lg lg:text-xl'>Node.js</li><li class='text-base md:text-lg lg:text-xl'>Express.js</li><li class='text-base md:text-lg lg:text-xl'>MongoDB</li></ul></div><p class='text-base md:text-lg lg:text-xl mb-4'><strong class='font-semibold'>Future Enhancements:</strong></p><ul class='list-disc list-inside space-y-2'><li class='text-base md:text-lg lg:text-xl'>Branch-wise timetable to help students manage their schedules</li><li class='text-base md:text-lg lg:text-xl'>Announcements for sharing important updates, either general or specific to branches/years</li></ul></div>
+      `,
+    link: "https://campuschronicles.netlify.app/",
+    github: "",
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: "<DummyContent />",
+    category: "Web",
+    title: "Payments App",
+    src: "/Projects/Payments.jpg",
+    content: `
+      <div class='p-4 md:p-6 lg:p-8'>
+        <p class='text-base md:text-lg lg:text-xl mb-4'>
+          <strong class='font-semibold'>Description:</strong> A payments app where users can send and receive money from registered users. Added a custom hook to prevent unauthorized access.
+        </p>
+        <p class='text-base md:text-lg lg:text-xl mb-4'>
+          <strong class='font-semibold'>Frontend:</strong>
+        </p>
+        <ul class='list-disc list-inside mb-4 space-y-2'>
+          <li class='text-base md:text-lg lg:text-xl'>Next.js</li>
+          <li class='text-base md:text-lg lg:text-xl'>Recoil - State Management</li>
+          <li class='text-base md:text-lg lg:text-xl'>Aceternity Ui</li>
+        </ul>
+        <p class='text-base md:text-lg lg:text-xl mb-4'>
+          <strong class='font-semibold'>Backend:</strong>
+        </p>
+        <ul class='list-disc list-inside mb-4 space-y-2'>
+          <li class='text-base md:text-lg lg:text-xl'>Node.js & Express.js</li>
+          <li class='text-base md:text-lg lg:text-xl'>ZOD (Input validation)</li>
+          <li class='text-base md:text-lg lg:text-xl'>JWT</li>
+          <li class='text-base md:text-lg lg:text-xl'>MongoDB</li>
+          <li class='text-base md:text-lg lg:text-xl'>Node.js transactions for secure, reliable, and robust payment transfers</li>
+        </ul>
+      </div>
+    `,
+    link: "https://drive.google.com/file/d/1XCQBN8ThuRc43PapPp_GTk-VgaBG_30l/view",
+    github: "https://github.com/SanketSonawane11/PayTm",
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: "<DummyContent />",
-  },
-
-  {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: "<DummyContent />",
-  },
-  {
-    category: "iOS",
-    title: "Photography just got better.",
+    category: "Web",
+    title: "Open Graph Image Generator",
     src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: "<DummyContent />",
+    content: `
+    <div class='p-4 md:p-6 lg:p-8'>
+      <p class='text-base md:text-lg lg:text-xl mb-4'>
+        <strong class='font-semibold'>Overview:</strong> The Post Image Generator allows users to create and customize images based on input. Users can add a title, content, and an optional image to generate a customized image that is then uploaded to Supabase. The generated image can be viewed and shared using its public URL.
+      </p>
+      <p class='text-base md:text-lg lg:text-xl mb-4'>
+        <strong class='font-semibold'>Key Features:</strong>
+      </p>
+      <ul class='list-disc list-inside mb-4 space-y-2'>
+        <li class='text-base md:text-lg lg:text-xl'>Customizable Images: Users can create images with custom text and optional image uploads.</li>
+        <li class='text-base md:text-lg lg:text-xl'>Image Storage: Images are stored securely using Supabase Storage.</li>
+        <li class='text-base md:text-lg lg:text-xl'>Public URL: Users receive a public URL to view and share the generated image.</li>
+      </ul>
+    </div>`,
+    link: "og-generator-nine.vercel.app",
+    github: "https://github.com/SanketSonawane11/OG-generator",
   },
   {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: "<DummyContent />",
+    category: "Web",
+    title: "Landing Page: RenewE",
+    src: "/Projects/RenewE.jpg",
+    content: `
+      <div class='p-4 md:p-6 lg:p-8'>
+      <p class='text-base md:text-lg lg:text-xl mb-4'>
+        <strong class='font-semibold'>Made using:</strong> React.js (Vite)
+      </p>
+      <p class='text-base md:text-lg lg:text-xl mb-4'>
+        <strong class='font-semibold'>Description:</strong> Responsive design.
+      </p>
+    </div>
+    `,
+    link: "https://renew-e.netlify.app/",
+    github: "https://github.com/SanketSonawane11/RenewE-Landing-Page",
   },
+  {
+    category: "Web",
+    title: "Landing Page: KoinX",
+    src: "/Projects/KoinX.jpg",
+    content: `
+    <div class='p-4 md:p-6 lg:p-8'>
+      <p class='text-base md:text-lg lg:text-xl mb-4'>
+        <strong class='font-semibold'>Made using:</strong> Next.js
+      </p>
+      <p class='text-base md:text-lg lg:text-xl mb-4'>
+        <strong class='font-semibold'>Description:</strong> Integrated tradingView and CoinGecko’s API to display the current rate and top coins and their status from the past 24 hours respectively.
+      </p>
+    </div>
+    `,
+    link: "https://koinx-btcn.netlify.app/",
+    github: "https://github.com/SanketSonawane11/KoinX",
+  },
+  // {
+  //   category: "Web",
+  //   title: "Safar",
+  //   src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   content: `
+  //   <div class='p-4 md:p-6 lg:p-8'>
+  //     <p class='text-base md:text-lg lg:text-xl mb-4'>
+  //       <strong class='font-semibold'>Description:</strong> Custom travel itinerary generator based on users' budget, destination, trip type, and the weather at that location.
+  //     </p>
+  //     <p class='text-base md:text-lg lg:text-xl mb-4'>
+  //       <strong class='font-semibold'>Frontend:</strong>
+  //     </p>
+  //     <ul class='list-disc list-inside mb-4 space-y-2'>
+  //       <li class='text-base md:text-lg lg:text-xl'>Next.js</li>
+  //     </ul>
+  //     <p class='text-base md:text-lg lg:text-xl mb-4'>
+  //       <strong class='font-semibold'>Backend:</strong>
+  //     </p>
+  //     <ul class='list-disc list-inside mb-4 space-y-2'>
+  //       <li class='text-base md:text-lg lg:text-xl'>Node.js & Express.js</li>
+  //       <li class='text-base md:text-lg lg:text-xl'>Passport</li>
+  //       <li class='text-base md:text-lg lg:text-xl'>MongoDB (Database)</li>
+  //     </ul>
+  //     <p class='text-base md:text-lg lg:text-xl mb-4'>
+  //       <strong class='font-semibold'>APIs:</strong>
+  //     </p>
+  //     <ul class='list-disc list-inside mb-4 space-y-2'>
+  //       <li class='text-base md:text-lg lg:text-xl'>Google Bard’s API for itinerary generation</li>
+  //       <li class='text-base md:text-lg lg:text-xl'>OpenWeatherMap API for weather information</li>
+  //     </ul>
+  //   </div>
+  //   `,
+  //   link: "",
+  //   github: "https://github.com/SanketSonawane11/SIH",
+  // },
 ];
