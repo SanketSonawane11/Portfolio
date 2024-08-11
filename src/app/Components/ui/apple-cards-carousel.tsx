@@ -19,6 +19,7 @@ import { useOutsideClick } from "@/Hooks/use-outside-click";
 import { FaLink, FaPlay } from "react-icons/fa";
 import { RxGithubLogo } from "react-icons/rx";
 import { PiLineVerticalBold } from "react-icons/pi";
+import { LinkPreview } from "./Link-Preview";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -243,19 +244,19 @@ export const Card = ({
                   {(card.link || card.video) && (
                     <div className="flex items-center gap-3 text-blue-500 hover:font-semibold hover:text-blue-300 transition-all ease-out duration-200">
                       {card.link ? <FaLink /> : <FaPlay />}{" "}
-                      <a target="_blank" href={card.video || card.link}>
+                      <LinkPreview url={card.video || card.link}>
                         {card.link ? "View Live" : "Watch Working Video"}
-                      </a>
+                      </LinkPreview>{" "}
                     </div>
                   )}
                   {card.github && (
                     <div className="flex items-center gap-3">
-                      <PiLineVerticalBold className="text-[1rem] font-extrabold"/>
+                      <PiLineVerticalBold className="text-[1rem] font-extrabold" />
                       <div className="flex items-center gap-3 text-blue-500 hover:font-semibold hover:text-blue-300 transition-all ease-out duration-200">
                         <RxGithubLogo />
-                        <a target="_blank" href={card.github}>
+                        <LinkPreview url={card.github}>
                           Check Github Repository
-                        </a>
+                        </LinkPreview>
                       </div>
                     </div>
                   )}
