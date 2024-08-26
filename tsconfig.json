@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/data/navLinks.js", "src/app/data/Projects.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/data/navLinks.js", "src/app/data/Projects.ts", "src/app/Components/ui/Globe.jsx"],
   "exclude": ["node_modules"]
 }
