@@ -38,9 +38,48 @@ export const projects = [
         </ul>
       </div>
     `,
-    link: '',
-    video: "https://drive.google.com/file/d/1XCQBN8ThuRc43PapPp_GTk-VgaBG_30l/view",
+    link: "",
+    video:
+      "https://drive.google.com/file/d/1XCQBN8ThuRc43PapPp_GTk-VgaBG_30l/view",
     github: "https://github.com/SanketSonawane11/PayTm",
+  },
+  {
+    category: "Web",
+    title: "Pilot-Searching",
+    src: "/Projects/Pilot-mapping.png",
+    content: `
+      <div class='p-4 md:p-6 lg:p-8'>
+        <p class='text-base md:text-lg lg:text-xl mb-4'>This Pilot-Searching project is currently live. However, since API calls are limited, please refer to the video for a complete demonstration. If you're a recruiter, kindly check the GitHub repository for more details. Please avoid using the live link casually; the video provided showcases the project in action.</p>
+        <p class='text-base md:text-lg lg:text-xl mb-4'><strong class='font-semibold'>Project Overview:</strong></p>
+        <p class='text-base md:text-lg lg:text-xl mb-4'>This project involves mapping drone flying pilots using a map interface. The data includes pilot details such as name, profile image, work experience, location, and geolocation coordinates. The map displays pilot locations with tooltips and an icon representing the live location of the admin viewing the map.</p>
+        <p class='text-base md:text-lg lg:text-xl mb-4'><strong class='font-semibold'>Features:</strong></p>
+        <ul class='list-disc list-inside mb-4 space-y-2'>
+          <li class='text-base md:text-lg lg:text-xl'>Map integration using an open-source service like React-Leaflet or MapMyIndia.</li>
+          <li class='text-base md:text-lg lg:text-xl'>Displays pilot data on the map with location icons and tooltips.</li>
+          <li class='text-base md:text-lg lg:text-xl'>Real-time admin location tracking on the map.</li>
+          <li class='text-base md:text-lg lg:text-xl'>Pilot matching feature based on work experience and proximity.</li>
+          <li class='text-base md:text-lg lg:text-xl'>Filtering pilots within a specific kilometer range from the admin’s location.</li>
+        </ul>
+        <p class='text-base md:text-lg lg:text-xl mb-4'><strong class='font-semibold'>Technologies:</strong></p>
+        <div class='mb-4'>
+          <h4 class='text-base md:text-lg lg:text-xl font-semibold mb-2'>Frontend:</h4>
+          <ul class='list-disc list-inside space-y-2'>
+            <li class='text-base md:text-lg lg:text-xl'>Next.js</li>
+            <li class='text-base md:text-lg lg:text-xl'>Mapbox API</li>
+          </ul>
+          <h4 class='text-base md:text-lg lg:text-xl font-semibold mb-2 mt-4'>Backend:</h4>
+          <ul class='list-disc list-inside space-y-2'>
+            <li class='text-base md:text-lg lg:text-xl'>Node.js</li>
+            <li class='text-base md:text-lg lg:text-xl'>Express.js</li>
+            <li class='text-base md:text-lg lg:text-xl'>MongoDB</li>
+          </ul>
+        </div>
+      </div>
+    `,
+    link: "",
+    video:
+      "https://drive.google.com/file/d/1aNKXQFk0PS5VkIq5gyhEFVsJeN1tGNch/view?usp=drive_link",
+    github: "https://github.com/SanketSonawane11/pilot-mapping",
   },
   {
     category: "Web",

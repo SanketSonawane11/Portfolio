@@ -24,7 +24,7 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
 
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -67,11 +67,15 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 hover:scale-110 rounded-lg duration-150 ease-out transition-all hover:font-semibold"
+              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 hover:scale-105 rounded-lg duration-150 ease-out transition-all hover:font-semibold"
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-lg mx-5">{navItem.name}</span>
+            <span className="block active:bg-gradient-to-r active:from-blue-500 active:to-purple-500 active:bg-clip-text active:text-transparent transition-all ease-out duration-200 sm:hidden">
+              {navItem.icon}
+            </span>
+            <span className="hidden hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:bg-clip-text hover:text-transparent transition-all ease-out duration-200 sm:block text-lg mx-5">
+              {navItem.name}
+            </span>
           </Link>
         ))}
 
@@ -83,10 +87,14 @@ export const FloatingNav = ({
               key={i.name}
               href={i.link}
               target="_blank"
-              className="flex items-center space-x-2 text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300 hover:scale-110 duration-150 ease-out transition-all hover:font-semibold"
+              className="flex items-center space-x-2 text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300 hover:scale-105 duration-150 ease-out transition-all hover:font-semibold"
             >
-              <span className="block sm:hidden">{i.icon}</span>
-              <span className="hidden sm:block text-lg">{i.name}</span>
+              <span className="block active:bg-gradient-to-r active:from-blue-500 active:to-purple-500 active:bg-clip-text active:text-transparent transition-all ease-out duration-200 sm:hidden">
+                {i.icon}
+              </span>
+              <span className="hidden hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:bg-clip-text hover:text-transparent transition-all ease-out duration-200 sm:block text-lg">
+                {i.name}
+              </span>
             </a>
           ))}
         </div>
