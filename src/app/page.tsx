@@ -4,6 +4,7 @@ import About from "./Components/AboutGrid/About";
 import { FloatingNav } from "./Components/ui/Navbar";
 import { navItems } from "./data/navLinks";
 import Projects from "./Components/Projects/Projects";
+import PastEx from "./Components/PastExperience/PastEx";
 
 function page() {
   return (
@@ -12,6 +13,7 @@ function page() {
       <Hero />
       <About />
       <Projects />
+      <PastEx />
     </div>
   );
 }

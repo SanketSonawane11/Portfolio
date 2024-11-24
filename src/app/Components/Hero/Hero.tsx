@@ -7,8 +7,8 @@ import { HeroHighlight, Highlight } from "../ui/Hero-highlight";
 import HeroFade from "../ui/gsapFade";
 import gsap from "gsap";
 import CtaButton from "../CtaButton/Button";
-import { FaLocationArrow } from "react-icons/fa";
 import { IconPosition } from "../CtaButton/Button";
+import { FaPlus } from "react-icons/fa6";
 
 function Hero() {
   const HeroTextFade = ({
@@ -67,7 +67,7 @@ function Hero() {
                   <Highlight className="text-white">
                     {splitText("Full-Stack Developer")}
                   </Highlight>{" "}
-                  specializing in {" "} 
+                  specializing in{" "}
                   <span className="text-white"> React and Next.js.</span>
                 </div>
               </HeroTextFade>
@@ -75,9 +75,9 @@ function Hero() {
           </HeroFade>
           <a href="#about">
             <CtaButton
-              text="See my work"
+              text="More about me"
               position={IconPosition.Left}
-              icon={<FaLocationArrow />}
+              icon={<FaPlus />}
             />
           </a>
         </div>
