@@ -2,7 +2,7 @@ export const workExperience = [
   {
     id: 4,
     title: "Frontend Web Developer - Varcsoft",
-    desc: "Worked as a Frontend Developer (Next.js) for a US-based company, building a dating app and its admin panel. Gained experience in responsiveness, SSO login, and more.",
+    desc: "Worked as a Frontend Developer (Next.js), building a dating app and its admin panel. Gained experience in responsiveness, SSO login, and more.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
