@@ -1,5 +1,12 @@
 export const workExperience = [
   {
+    id: 4,
+    title: "Frontend Web Developer - Varcsoft",
+    desc: "Worked as a Frontend Developer (Next.js) for a US-based company, building a dating app and its admin panel. Gained experience in responsiveness, SSO login, and more.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+  {
     id: 1,
     title: "Frontend Engineer Intern - DHWL Technologies",
     desc: "Built a scalable web platform from scratch using React.js (Vite), ensuring responsiveness and seamless user experience.",
@@ -19,12 +26,5 @@ export const workExperience = [
     desc: "Delivered a modern website for a client, managing development from concept to deployment with a focus on functionality and user satisfaction.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
-  },
-  {
-    id: 4,
-    title: "Technical Member - CSI TSEC",
-    desc: "Contributed to developing and maintaining user-centric features for the CSI TSEC platform using modern frontend technologies like React.js.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
   },
 ];

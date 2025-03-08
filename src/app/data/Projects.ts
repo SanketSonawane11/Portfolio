@@ -1,6 +1,56 @@
 export const projects = [
   {
     category: "Web",
+    title: "Managerrr - Project Management Software (In Progress)",
+    src: "/Projects/Managerrr.svg",
+    content: `
+      <div class='p-4 md:p-6 lg:p-8'>
+        <p class='text-base md:text-lg lg:text-xl mb-4'>
+          <strong class='font-semibold'>Overview:</strong> Managerrr is a lightweight yet powerful project management software designed for small teams and freelancers. It offers a streamlined approach to task management, team collaboration, and project tracking, making it easy to stay on top of deadlines and responsibilities.
+        </p>
+        <p class='text-base md:text-lg lg:text-xl mb-4'>
+          <strong class='font-semibold'>Key Features:</strong>
+        </p>
+        <ul class='list-disc list-inside mb-4 space-y-2'>
+          <li class='text-base md:text-lg lg:text-xl'>Task Management: Assign, track, and update tasks effortlessly.</li>
+          <li class='text-base md:text-lg lg:text-xl'>Real-time Collaboration: Stay connected with your team through live updates.</li>
+          <li class='text-base md:text-lg lg:text-xl'>Team Performance Scoring: Weighted scoring system to track contributions effectively.</li>
+          <li class='text-base md:text-lg lg:text-xl'>Gantt Chart: Visualize project timelines for better planning.</li>
+          <li class='text-base md:text-lg lg:text-xl'>Calendar Integration: Sync tasks with Google Calendar or Outlook. [Upcoming]</li>
+          <li class='text-base md:text-lg lg:text-xl'>Email Notifications: Get notified about task updates and deadlines. [Upcoming]</li>
+        </ul>
+        <p class='text-base md:text-lg lg:text-xl mb-4'>
+          <strong class='font-semibold'>Technologies:</strong>
+        </p>
+        <div class='mb-4'>
+          <h4 class='text-base md:text-lg lg:text-xl font-semibold mb-2'>Frontend:</h4>
+          <ul class='list-disc list-inside space-y-2'>
+            <li class='text-base md:text-lg lg:text-xl'>React.js (Vite)</li>
+            <li class='text-base md:text-lg lg:text-xl'>Tailwind CSS</li>
+            <li class='text-base md:text-lg lg:text-xl'>Recoil</li>
+          </ul>
+          <h4 class='text-base md:text-lg lg:text-xl font-semibold mb-2 mt-4'>Backend:</h4>
+          <ul class='list-disc list-inside space-y-2'>
+            <li class='text-base md:text-lg lg:text-xl'>Node.js</li>
+            <li class='text-base md:text-lg lg:text-xl'>Express.js</li>
+            <li class='text-base md:text-lg lg:text-xl'>MongoDB</li>
+            <li class='text-base md:text-lg lg:text-xl'>Supabase (Authentication & Database Management)</li>
+          </ul>
+        </div>
+        <p class='text-base md:text-lg lg:text-xl mb-4'>
+          <strong class='font-semibold'>Future Enhancements:</strong>
+        </p>
+        <ul class='list-disc list-inside space-y-2'>
+          <li class='text-base md:text-lg lg:text-xl'>Team Meetings: Integrated video and chat for discussions.</li>
+          <li class='text-base md:text-lg lg:text-xl'>More Customization Options: Personalized dashboards and themes.</li>
+        </ul>
+      </div>
+    `,
+    link: "https://managerrr.vercel.app",
+    github: "https://github.com/SanketSonawane11/Managerrr",
+  },
+  {
+    category: "Web",
     title: "Campus Chronicles: Notes Sharing Platform",
     src: "/Projects/CampusChronicles.jpg",
     content: `
@@ -136,39 +186,4 @@ export const projects = [
     link: "https://koinx-btcn.netlify.app/",
     github: "https://github.com/SanketSonawane11/KoinX",
   },
-  // {
-  //   category: "Web",
-  //   title: "Safar",
-  //   src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   content: `
-  //   <div class='p-4 md:p-6 lg:p-8'>
-  //     <p class='text-base md:text-lg lg:text-xl mb-4'>
-  //       <strong class='font-semibold'>Description:</strong> Custom travel itinerary generator based on users' budget, destination, trip type, and the weather at that location.
-  //     </p>
-  //     <p class='text-base md:text-lg lg:text-xl mb-4'>
-  //       <strong class='font-semibold'>Frontend:</strong>
-  //     </p>
-  //     <ul class='list-disc list-inside mb-4 space-y-2'>
-  //       <li class='text-base md:text-lg lg:text-xl'>Next.js</li>
-  //     </ul>
-  //     <p class='text-base md:text-lg lg:text-xl mb-4'>
-  //       <strong class='font-semibold'>Backend:</strong>
-  //     </p>
-  //     <ul class='list-disc list-inside mb-4 space-y-2'>
-  //       <li class='text-base md:text-lg lg:text-xl'>Node.js & Express.js</li>
-  //       <li class='text-base md:text-lg lg:text-xl'>Passport</li>
-  //       <li class='text-base md:text-lg lg:text-xl'>MongoDB (Database)</li>
-  //     </ul>
-  //     <p class='text-base md:text-lg lg:text-xl mb-4'>
-  //       <strong class='font-semibold'>APIs:</strong>
-  //     </p>
-  //     <ul class='list-disc list-inside mb-4 space-y-2'>
-  //       <li class='text-base md:text-lg lg:text-xl'>Google Bard’s API for itinerary generation</li>
-  //       <li class='text-base md:text-lg lg:text-xl'>OpenWeatherMap API for weather information</li>
-  //     </ul>
-  //   </div>
-  //   `,
-  //   link: "",
-  //   github: "https://github.com/SanketSonawane11/SIH",
-  // },
 ];
