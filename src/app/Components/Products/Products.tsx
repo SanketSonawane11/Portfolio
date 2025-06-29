@@ -3,6 +3,7 @@ import React from "react";
 import { ContainerScroll } from "../ui/container-scroll-animation";
 import Image from "next/image";
 import { SparklesCore } from "../ui/sparkles";
+import Link from "next/link";
 
 export function Products() {
   return (
@@ -32,27 +33,33 @@ export function Products() {
           <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
         </div>
       </div>
-      <ContainerScroll
-        titleComponent={
-          <>
-            <h1 className="text-4xl font-semibold text-black dark:text-white">
-              One App. All Freelance Essentials. <br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Freelancer Copilot
-              </span>
-            </h1>
-          </>
-        }
+      <a
+        href="https://freelance-copilot.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <Image
-          src={`/Products/Freelancer-Copilot.png`}
-          alt="hero"
-          height={720}
-          width={1400}
-          className="mx-auto rounded-2xl object-cover object-center h-full"
-          draggable={true}
-        />
-      </ContainerScroll>
+        <ContainerScroll
+          titleComponent={
+            <>
+              <h1 className="text-4xl font-semibold text-black dark:text-white">
+                One App. All Freelance Essentials. <br />
+                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                  Freelancer Copilot
+                </span>
+              </h1>
+            </>
+          }
+        >
+          <Image
+            src={`/Products/Freelancer-Copilot.png`}
+            alt="hero"
+            height={720}
+            width={1400}
+            className="mx-auto rounded-2xl object-cover object-center h-full"
+            draggable={true}
+          />
+        </ContainerScroll>
+      </a>
     </div>
   );
 }
