@@ -104,12 +104,12 @@ export const BentoGridItem = ({
           </div>
           {id === 2 && <GridGlobe />}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 overflow-x-auto scrollbar-hidden">
+            <div className="flex gap-1 lg:gap-5 pr-[20px] w-fit absolute -right-3 lg:-right-2 overflow-x-auto scrollbar-hidden">
               <div className="flex flex-col gap-5 lg:gap-6 lg:mt-10 h-fit">
                 {[
                   "TailwindCss",
                   "Typescript",
-                  "React.Js",
+                  "SwiftUi",
                   "Next.Js",
                   "Recoil",
                   "GSAP",
@@ -125,7 +125,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-5 lg:gap-6 lg:mt-4 h-fit">
                 <span className="py-6 px-3 rounded-lg text-center bg-[#151831]" />
-                {["MongoDb", "Express", "APIs", "Framer", "Git"].map(
+                {["MongoDb", "Express.js", "APIs", "Supabase", "Postman API", "Vercel"].map(
                   (skill) => (
                     <span
                       key={skill}

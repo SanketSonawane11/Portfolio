@@ -54,7 +54,7 @@ export const gridItems = [
   {
     id: 6,
     // title: "Excited About a New Project? Shoot Me an Email!",
-    title: "Let’s Turn Your Vision into Reality—Email Me!",
+    title: "Let's Turn Your Vision into Reality—Email Me!",
     description: "",
     className: "lg:col-span-2 text-white md:col-span-3 md:row-span-1",
     imgClassName: "",
