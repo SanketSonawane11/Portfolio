@@ -1,4 +1,3 @@
-projects;
 import React from "react";
 import { Card, Carousel } from "../ui/apple-cards-carousel";
 import Image from "next/image";

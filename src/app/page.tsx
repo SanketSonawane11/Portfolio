@@ -5,6 +5,7 @@ import { FloatingNav } from "./Components/ui/Navbar";
 import { navItems } from "./data/navLinks";
 import Projects from "./Components/Projects/Projects";
 import PastEx from "./Components/PastExperience/PastEx";
+import { Products } from "./Components/Products/Products";
 
 function page() {
   return (
@@ -12,6 +13,7 @@ function page() {
       <FloatingNav navItems={navItems} />
       <Hero />
       <About />
+      <Products/>
       <Projects />
       <PastEx />
     </div>
