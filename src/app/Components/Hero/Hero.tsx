@@ -75,7 +75,7 @@ function Hero() {
               </HeroTextFade>
             </HeroHighlight>
           </HeroFade>
-          <Link href="https://drive.google.com/file/d/13khFzF1Nt78FVUYNxMuPFqlPrp1GJe-x/view?usp=drive_link" target="_blank">
+          <Link href="https://drive.google.com/file/d/1CYdEhKsDlT474HsBWgYgtAa-017Ntyih/view?usp=sharing" target="_blank">
             <CtaButton
               text="More about me"
               position={IconPosition.Left}
