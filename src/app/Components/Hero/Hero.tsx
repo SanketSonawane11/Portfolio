@@ -8,8 +8,7 @@ import HeroFade from "../ui/gsapFade";
 import gsap from "gsap";
 import CtaButton from "../CtaButton/Button";
 import { IconPosition } from "../CtaButton/Button";
-import { FaDownload, FaPlus } from "react-icons/fa6";
-import { FaFileDownload } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa6";
 import Link from "next/link";
 
 function Hero() {
@@ -75,7 +74,10 @@ function Hero() {
               </HeroTextFade>
             </HeroHighlight>
           </HeroFade>
-          <Link href="https://drive.google.com/file/d/1CYdEhKsDlT474HsBWgYgtAa-017Ntyih/view?usp=sharing" target="_blank">
+          <Link
+            href="https://drive.google.com/file/d/1CYdEhKsDlT474HsBWgYgtAa-017Ntyih/view?usp=sharing"
+            target="_blank"
+          >
             <CtaButton
               text="More about me"
               position={IconPosition.Left}
