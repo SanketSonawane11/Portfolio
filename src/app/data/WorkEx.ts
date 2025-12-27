@@ -1,8 +1,15 @@
 export const workExperience = [
   {
+    id: 3,
+    title: "Project Intern - Tata Advanced Systems Limited",
+    desc: "Woeking on real-time video compression and streaming using Machine Learning to optimise survillance for lower bandwidth locations",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
     id: 4,
-    title: "Frontend Web Developer - Varcsoft",
-    desc: "Worked as a Frontend Developer (Next.js), building a dating app and its admin panel. Gained experience in responsiveness, SSO login, and more.",
+    title: "Software Developer - Varcsoft",
+    desc: "Worked as a Frontend Developer (Next.js), building a dating app and its admin panel. Gained experience in responsiveness, SSO login, Cloud Deployments and more.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -20,11 +27,11 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
-  {
-    id: 3,
-    title: "Freelance Web Dev Project",
-    desc: "Delivered a modern website for a client, managing development from concept to deployment with a focus on functionality and user satisfaction.",
-    className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
-  },
+  // {
+  //   id: 3,
+  //   title: "Freelance Web Dev Project",
+  //   desc: "Delivered a modern website for a client, managing development from concept to deployment with a focus on functionality and user satisfaction.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp2.svg",
+  // },
 ];
