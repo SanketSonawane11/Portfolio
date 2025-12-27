@@ -13,7 +13,7 @@ import Link from "next/link";
 
 function Hero() {
 
-  const resumeLink = "https://drive.google.com/file/d/1Pr7e5jlLKPVAf_Ruo55d1aEOnXeWeQ3F/view?usp=sharing";
+  const resumeLink = "https://drive.google.com/drive/folders/1DeGCF_TJJNLsHS4RUE_zfPl6NjqavUBm?usp=sharing";
 
   const HeroTextFade = ({
     className,
