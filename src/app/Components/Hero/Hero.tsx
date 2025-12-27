@@ -12,6 +12,9 @@ import { FaDownload } from "react-icons/fa6";
 import Link from "next/link";
 
 function Hero() {
+
+  const resumeLink = "https://drive.google.com/file/d/1Pr7e5jlLKPVAf_Ruo55d1aEOnXeWeQ3F/view?usp=sharing";
+
   const HeroTextFade = ({
     className,
     children,
@@ -75,7 +78,7 @@ function Hero() {
             </HeroHighlight>
           </HeroFade>
           <Link
-            href="https://drive.google.com/file/d/1CYdEhKsDlT474HsBWgYgtAa-017Ntyih/view?usp=sharing"
+            href={resumeLink}
             target="_blank"
           >
             <CtaButton
