@@ -112,7 +112,7 @@ export const BentoGridItem = ({
                   "SwiftUi",
                   "Next.Js",
                   "Recoil",
-                  "AWS/Cloudinary",
+                  "AWS",
                 ].map((skill) => (
                   <span
                     key={skill}

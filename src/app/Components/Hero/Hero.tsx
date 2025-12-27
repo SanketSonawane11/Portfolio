@@ -69,10 +69,10 @@ function Hero() {
                   </Highlight>{" "}
                   , a{" "}
                   <Highlight className="text-white">
-                    {splitText("Full-Stack Developer")}
+                    {splitText("Software Developer")}
                   </Highlight>{" "}
                   specializing in{" "}
-                  <span className="text-white"> React and Next.js.</span>
+                  <span className="text-white"> Next.js.</span>
                 </div>
               </HeroTextFade>
             </HeroHighlight>
